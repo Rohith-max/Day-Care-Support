@@ -1,0 +1,40 @@
+.frame {
+	display: inline-flex;
+	align-items: center;
+	height: 20px;
+	gap: 5px;
+	cursor: pointer;
+}
+
+.iconGroup {
+	width: 16px;
+	height: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.labelFrame {
+	display: inline-flex;
+	align-items: center;
+	height: 20px;
+	gap: 15px; /* text padding-right 15, chevron positioned at end */
+}
+
+.label {
+	font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 145%;
+	color: #4b5563;
+}
+
+.chevron {
+	transition: transform 0.2s ease;
+}
+
+.chevronOpen {
+	transform: rotate(180deg);
+	transition: transform 0.2s ease;
+}
+
+

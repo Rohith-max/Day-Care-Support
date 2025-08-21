@@ -1,0 +1,26 @@
+.employee-profile-section {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 16px 32px;
+  background: transparent;
+  border-radius: 0;
+  border: none;
+  width: 100%;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .employee-profile-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .employee-profile-section {
+    padding: 16px;
+  }
+}

@@ -1,0 +1,520 @@
+.training-videos-container {
+  padding: 16px 56px 16px 24px; /* keep right inside a bit more */
+  margin-top: 16px;
+}
+
+.daycare-box {
+  width: 100%;
+  background: #F9FAFB;
+  border-radius: 10px;
+  padding: 22px; /* slight padding to keep content off edges */
+}
+
+.daycare-box-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  line-height: 0;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.section-heading {
+  display: inline-block;
+  font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 145%;
+  color: #101928;
+}
+
+.daycare-box-header img {
+  display: block;
+  vertical-align: middle;
+}
+
+/* layout rows for fields inside daycare box */
+.daycare-row {
+  display: flex;
+  gap: 20px;
+  margin-top: 16px;
+}
+
+/* Upload section below table */
+.upload-section { margin-top: 16px; }
+.upload-row { margin-top: 16px; }
+.upload-label {
+  font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700; /* bold headings per request */
+  color: #667185;
+  margin-bottom: 8px;
+}
+.upload-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px dashed #d6dae1;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+.upload-box-left { display: flex; align-items: center; gap: 12px; }
+.upload-texts { display: flex; flex-direction: column; }
+.choose-file {
+  font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+  font-weight: 700;
+  color: #101928;
+  font-size: 14px;
+}
+.file-hint { color: #98A2B3; font-size: 12px; }
+.upload-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #38AEE0;
+  color: #ffffff;
+  border: 1px solid #38AEE0;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+  font-weight: 700;
+}
+.comment-row { margin-top: 20px; }
+.comment-box {
+  width: calc(100% - 24px); /* add right padding space from box edge */
+  height: 100px;
+  resize: none; /* disable resizing */
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
+  background: #ffffff;
+  padding: 12px;
+  color: #202224;
+  font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* removed character counter */
+
+.success-message {
+  background: #f0f9ff;
+  border: 1px solid #0ea5e9;
+  color: #0c4a6e;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin: 16px 0;
+  font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.table-section {
+  margin-top: 20px;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 0 22px;
+}
+
+.table-title {
+  font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #202224;
+}
+
+.table-counter {
+  font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+  font-size: 14px;
+  color: #6b7280;
+  background: #f3f4f6;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.section-divider {
+  margin-top: 20px;
+}
+
+.add-child-btn {
+  height: 38px;
+  align-self: end;
+  padding: 0 16px;
+  border-radius: 4px;
+  background: #ffffff;
+  border: 1px solid #38aee0;
+  color: #38aee0;
+  font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.daycare-row-spacer {
+  flex: 1;
+}
+
+/* match card text color and subtle background from screenshot */
+.daycare-box {
+  color: #202224;
+}
+
+/* cleared body/input styles for now */
+
+.main-rectangle {
+  background: #eff6ff;
+  border-radius: 10px;
+  padding: 24px;
+  min-height: 600px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* White Text Area */
+.white-text-area {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+  max-height: 400px;
+  overflow-y: auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom Scrollbar Styling */
+.white-text-area::-webkit-scrollbar {
+  width: 8px;
+}
+
+.white-text-area::-webkit-scrollbar-track {
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.white-text-area::-webkit-scrollbar-thumb {
+  background: #38aee0;
+  border-radius: 4px;
+}
+
+.white-text-area::-webkit-scrollbar-thumb:hover {
+  background: #2d8bb8;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.section-title {
+  font-family: "Samsung InterFace", sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0.25px;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+.section-subtitle {
+  font-family: "Samsung InterFace", sans-serif;
+  font-weight: 400;
+  font-style: regular;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0px;
+  color: rgba(60, 60, 67, 0.85);
+  margin: 0;
+  padding: 0;
+}
+
+.main-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.main-text p {
+  font-family: "Samsung InterFace", sans-serif;
+  font-weight: 400;
+  font-style: regular;
+  font-size: 14px;
+  line-height: 35px;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+/* Training Progress Bar */
+.training-progress-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 32px;
+  margin-top: 25px;
+  position: relative;
+}
+
+.above-loader-icon {
+  position: absolute;
+  top: -30px;
+  left: 620px;
+  z-index: 10;
+}
+
+/* Training Heading */
+.training-heading {
+  font-family: "Samsung InterFace", sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0.25px;
+  color: #202224;
+  margin: 0;
+  padding: 0;
+}
+
+/* Progress Bar Container */
+.progress-bar-container {
+  display: flex;
+  align-items: center;
+  background: #e8e8e8;
+  border-radius: 30px;
+  padding: 7px 10px;
+  width: fit-content;
+  gap: 14px;
+  margin-left: 0;
+}
+
+.progress-module {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-shrink: 0;
+  padding: 5px 7px;
+  border-radius: 0;
+  transition: all 0.3s ease;
+}
+
+.progress-module.active {
+  background: linear-gradient(36deg, #3fbce6 0%, #36a8de 100%);
+  margin: -7px -10px;
+  padding: 15px 18px;
+  border-radius: 30px;
+}
+
+.progress-module-text {
+  font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+  font-size: 15px;
+  color: #000000;
+  line-height: 145%;
+  white-space: nowrap;
+  font-weight: 400;
+}
+
+.progress-module.active .progress-module-text {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.progress-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Training Videos Text Section */
+.training-videos-text-section {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.training-videos-title {
+  font-family: "Samsung InterFace", sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0.25px;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.training-videos-description {
+  font-family: "Samsung InterFace", sans-serif;
+  font-weight: 400;
+  font-style: regular;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.completion-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Compliance Checkbox */
+.compliance-checkbox {
+  margin-top: auto;
+  padding-top: 24px;
+  padding-left: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Submit section removed */
+
+.checkbox-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  cursor: pointer;
+  justify-content: flex-start;
+}
+
+.checkbox-input {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  cursor: pointer;
+  accent-color: #006ffd;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.checkbox-input:checked {
+  background-color: #006ffd;
+  border-color: #006ffd;
+  position: relative;
+}
+
+.checkbox-input:checked::after {
+  content: "✓";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.checkbox-text {
+  font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+  font-size: 14px;
+  color: #000000;
+  line-height: 145%;
+  flex: 1;
+}
+
+/* Action Bar */
+.action-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  padding: 0 0 8px 0;
+  width: 100%;
+}
+
+.view-policies-link { display: flex; align-items: center; gap: 8px; color: #606060; margin-top: 320px; }
+.view-policies-link span { font-family: "Samsung InterFace", sans-serif; font-weight: 400; font-size: 14px; line-height: 100%; letter-spacing: 0px; color: #606060; }
+
+.submit-wrap { margin-left: auto; }
+.submit-btn { display: inline-flex; border: none; background: transparent; padding: 0; cursor: pointer; }
+.review-buttons { display: flex; gap: 16px; justify-content: flex-end; }
+
+.view-policies-link span {
+  font-family: "Samsung InterFace", sans-serif;
+  font-weight: 400;
+  font-style: regular;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #606060;
+}
+
+/* Submit button styles removed */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .training-videos-container {
+    padding: 16px;
+  }
+
+  .main-rectangle {
+    padding: 16px;
+  }
+
+  .tab-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .toggle-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .item-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+/* Note Tooltip Styles */
+.note-tooltip {
+  position: absolute;
+  z-index: 1000;
+}
+
+.dob-note {
+  left: calc(100% + 4px);
+  top: 60%;
+  transform: translateY(-50%);
+}
+
+.upload-note {
+  left: calc(100% + 4px);
+  top: 60%;
+  transform: translateY(-50%);
+}
+
+.upload-label {
+  position: relative;
+}
+
+.icon-container {
+  position: relative;
+  display: inline-block;
+}

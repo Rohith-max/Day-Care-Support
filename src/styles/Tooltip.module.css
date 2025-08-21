@@ -1,0 +1,122 @@
+.tooltipContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip {
+  position: fixed;
+  z-index: 1000;
+  width: 521px;
+  height: 276px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 0;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+.tooltip-right {
+  margin-left: 8px;
+}
+
+.tooltip-left {
+  margin-right: 8px;
+}
+
+.tooltip-top {
+  margin-bottom: 8px;
+}
+
+.tooltip-bottom {
+  margin-top: 8px;
+}
+
+.beak {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 6px;
+  right: 10px;
+}
+
+.beakFill {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #ffffff;
+  transform: rotate(45deg);
+  top: 0;
+  left: 0;
+}
+
+.beakStroke {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #d9d9d9;
+  transform: rotate(45deg);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.tooltipContent {
+  padding: 10px;
+  height: 100%;
+  position: relative;
+}
+
+.tooltipTitle {
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 139.9999976158142%;
+  color: #202224;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.tooltipText {
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 139.9999976158142%;
+  color: #606060;
+  text-align: left;
+  white-space: pre-line;
+}
+
+.closeButton {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 16px;
+  height: 16px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.closeButton:hover {
+  opacity: 0.8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .tooltip {
+    width: 90vw;
+    max-width: 400px;
+    height: auto;
+    min-height: 200px;
+  }
+  
+  .tooltip-right,
+  .tooltip-left {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

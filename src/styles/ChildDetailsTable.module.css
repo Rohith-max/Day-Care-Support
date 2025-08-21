@@ -1,0 +1,55 @@
+
+
+.tableCard {
+	width: calc(100% + 44px); /* extend to box edges (22px padding x2) */
+	border: 1px solid #e5e7eb;
+	border-radius: 6px;
+	background: #ffffff;
+	margin-top: 20px; /* leave more space from fields */
+	margin-left: -22px;
+	margin-right: -22px;
+	overflow: hidden;
+}
+
+.table { width: 100%; border-collapse: collapse; }
+.table thead th {
+	background: #eaf2ff; /* header row color */
+	text-align: left;
+	font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	color: #202224;
+	padding: 12px 14px;
+}
+.table tbody td {
+	background: #ffffff; /* attribute rows white */
+	font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+	font-size: 14px;
+	color: #101928;
+	padding: 14px;
+	border-top: 1px solid #e4e7ec;
+}
+
+.actionIcons { 
+	display: flex; 
+	gap: 12px; 
+	justify-content: flex-end; 
+}
+
+.actionIcon {
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.deleteIcon:hover {
+	transform: scale(1.1);
+	filter: brightness(1.2);
+}
+
+.actionIcon:hover {
+	transform: scale(1.1);
+}
+
+

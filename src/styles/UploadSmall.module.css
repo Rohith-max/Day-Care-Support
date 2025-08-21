@@ -1,0 +1,22 @@
+.smallUpload {
+	width: 430px;
+	height: 56px;
+	background: #ffffff;
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 14px 13px 4px 12px;
+	border: 1px dashed #d6dae1;
+}
+.leftText { display: flex; align-items: center; gap: 12px; }
+.texts { display: flex; flex-direction: column; gap: 4px; }
+.title { font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif; font-weight: 700; font-size: 16px; color: #000; }
+.hint { font-size: 14px; color: #98a2b3; display: flex; align-items: center; gap: 8px; }
+.dot { width: 4px; height: 4px; border-radius: 2px; background: #98a2b3; display: inline-block; }
+.uploadBtn { display: inline-flex; align-items: center; gap: 8px; height: 36px; padding: 0 12px; background: #fff; color: #38aee0; border: 1px solid #38aee0; border-radius: 6px; font-weight: 600; }
+.btnIcon { width: 13px; height: 14px; background: #38aee0; -webkit-mask: url('../assets/svg/upload-arrow.svg') center/contain no-repeat; mask: url('../assets/svg/upload-arrow.svg') center/contain no-repeat; }
+
+/* Removed circular wrappers around icons to match upload_sample.svg */
+
+

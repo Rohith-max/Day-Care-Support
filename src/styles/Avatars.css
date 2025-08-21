@@ -1,0 +1,23 @@
+.avatars-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0;
+  background: #ffffff;
+  font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .avatars-container {
+    padding: 16px;
+  }
+}
