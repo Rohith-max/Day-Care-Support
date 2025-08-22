@@ -206,9 +206,6 @@
 .dropdown-item:hover {
   background-color: #f5f5f5;
 }
-  flex-direction: column;
-  justify-content: space-between;
-}
 
 /* White Text Area */
 .white-text-area {
