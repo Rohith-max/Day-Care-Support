@@ -46,7 +46,7 @@ export default function UploadSmall({ onUploadedChange }) {
 				{uploadedFile ? (
 					<img src={new URL("../assets/svg/pdf_icon.svg", import.meta.url).href} width={47} height={48} alt="pdf" />
 				) : (
-					<img src={new URL("../assets/svg/cloud-upload.svg", import.meta.url).href} width={47} height={48} alt="cloud" />
+					<img src={new URL("../assets/svg/upload-circle.svg", import.meta.url).href} width={47} height={48} alt="cloud" />
 				)}
 				<div className={styles.texts}>
 					<div className={styles.title}>
@@ -73,8 +73,7 @@ export default function UploadSmall({ onUploadedChange }) {
 				<img onClick={handleUploadClick} style={{ cursor: 'pointer', width: 28, height: 28 }} src={new URL("../assets/svg/upload_icon.svg", import.meta.url).href} width={28} height={28} alt="uploaded" />
 			) : (
 				<button className={styles.uploadBtn} type="button" onClick={handleUploadClick}>
-					<span className={styles.btnIcon} />
-					Upload
+					<img src={new URL("../assets/svg/upload.svg", import.meta.url).href} alt="Upload" />
 				</button>
 			)}
 		</div>

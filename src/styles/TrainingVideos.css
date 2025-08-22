@@ -31,6 +31,9 @@
   font-size: 18px;
   line-height: 145%;
   color: #101928;
+  position: relative;
+  z-index: 1;
+  padding: 0 10px;
 }
 
 .daycare-box-header img {
@@ -145,6 +148,26 @@
   margin-top: 20px;
 }
 
+.section-heading-container {
+  position: relative;
+  display: block;
+  width: calc(100% + 44px); /* Extend to touch both edges */
+  margin: 10px -22px; /* Added vertical padding and kept horizontal extension */
+  padding: 10px 0; /* Additional padding above and below */
+}
+
+.section-heading-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  width: 100%;
+  height: auto;
+}
+
+/* Section heading styles are now combined in the main definition above */
+
 .add-child-btn {
   height: 38px;
   align-self: end;
@@ -176,6 +199,13 @@
   min-height: 600px;
   position: relative;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dropdown-item:hover {
+  background-color: #f5f5f5;
+}
   flex-direction: column;
   justify-content: space-between;
 }

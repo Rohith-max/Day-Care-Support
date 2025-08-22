@@ -29,6 +29,7 @@
 	background: #ffffff;
 	display: flex;
 	align-items: center;
+	cursor: text;
 }
 
 .inputFrame:focus-within {
@@ -64,6 +65,7 @@
 
 .rightIcon {
 	margin-right: 12px;
+	cursor: pointer;
 }
 
 .errorText {
