@@ -60,7 +60,7 @@ const Avatars = () => {
   // Employee data object
   const employeeData = {
     initials: "MK",
-    name: "Manoj Kandan M",
+    name: "Manoj Kandan M ",
     genId: "255048778",
     email: "Manoj.kandan@partner.samsung.com",
     designation: "Outsourcing",

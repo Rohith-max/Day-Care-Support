@@ -38,7 +38,7 @@
 
 .daycare-box-header img {
   display: block;
-  vertical-align: middle;
+  /* Removed vertical-align since it has no effect with display: block */
 }
 
 /* layout rows for fields inside daycare box */
@@ -152,8 +152,8 @@
   position: relative;
   display: block;
   width: calc(100% + 44px); /* Extend to touch both edges */
-  margin: 10px -22px; /* Added vertical padding and kept horizontal extension */
-  padding: 10px 0; /* Additional padding above and below */
+  margin: 5px -22px; /* Reduced vertical padding and kept horizontal extension */
+  padding: 5px 0; /* Reduced padding above and below */
 }
 
 .section-heading-background {

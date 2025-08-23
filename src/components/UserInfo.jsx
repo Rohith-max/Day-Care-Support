@@ -16,6 +16,11 @@ const UserInfo = ({
         <div className="user-name" onClick={onNameClick}>
           {name}
         </div>
+        <img 
+          src={new URL("../assets/svg/profile-dot.svg", import.meta.url).href}
+          alt="separator"
+          className="profile-dot"
+        />
         <div className="user-gen-id">Gen ID: {genId}</div>
       </div>
       <div className="user-email" onClick={onEmailClick}>

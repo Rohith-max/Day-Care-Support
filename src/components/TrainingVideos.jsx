@@ -285,7 +285,7 @@ const TrainingVideos = () => {
               <FieldBox
                 label="Name of Day Care Centre"
                 required
-                placeholder="Euro Kid Day care"
+                placeholder="xxx-xx-xxxxxx-xx-xxxxx"
                 value={dayCareCentre}
                 onChange={handleDayCareNameChange}
                 error={validationErrors.dayCareCentre}
@@ -321,7 +321,7 @@ const TrainingVideos = () => {
               <FieldBox
                 label="Day Care Fees"
                 required
-                placeholder="10,000"
+                placeholder="Ashwini"
                 value={dayCareFees}
                 onChange={handleDayCareFees}
                 error={validationErrors.dayCareFees}

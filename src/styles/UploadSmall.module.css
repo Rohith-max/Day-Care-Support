@@ -1,13 +1,13 @@
 .smallUpload {
 	width: 430px;
 	height: 56px;
-	background: #ffffff;
+	background: #ffffff url('../assets/svg/upload-button-border.svg') no-repeat center center / 100% 100%;
 	border-radius: 8px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 14px 13px 4px 12px;
-	border: 1px dashed #d6dae1;
+	padding: 14px 24px 14px 24px;
+	border: none;
 }
 .leftText { display: flex; align-items: center; gap: 12px; }
 .texts { display: flex; flex-direction: column; gap: 4px; }
